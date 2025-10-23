@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>H. Jejen Sayuti, S.E. — Daily Vlog & Kuliner</title>
+  <meta name="description" content="Website resmi H. Jejen Sayuti, S.E. — Daily vlog, kuliner, dan kehidupan sehari-hari. YouTube: KangJejenSayutiTeam | TikTok: npoct_ | Kolaborasi & Kontak" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> 
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff6b35;--muted:#94a3b8;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#071024 0%, #071529 100%);color:#e6eef8;line-height:1.5}
+    .container{max-width:1100px;margin:32px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:16px;object-fit:cover;box-shadow:0 8px 30px rgba(255,107,53,0.2)}
+    h1{margin:0;font-size:28px}
+    .subtitle{color:var(--muted);margin-top:6px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:12px;background:var(--accent);color:#07121a;font-weight:600;text-decoration:none}
+    nav{margin-left:auto}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:28px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .pill{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+    .videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+    .video-embed{position:relative;padding-bottom:56.25%;height:0;border-radius:10px;overflow:hidden}
+    .video-embed iframe,.video-embed blockquote{position:absolute;left:0;top:0;width:100%;height:100%;border:0}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="PP PA HAJI.jpg" alt="H. Jejen Sayuti" class="avatar" />
+      <div>
+        <h1>H. Jejen Sayuti, S.E.</h1>
+        <div class="subtitle">Daily Vlog & Kuliner — YouTube • TikTok</div>
+        <div class="meta">
+          <div class="pill">Daily Vlogs</div>
+          <div class="pill">Kuliner</div>
+          <div class="pill">Kolaborasi</div>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#videos">Lihat Video</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section>
+        <div class="card">
+          <h2>Tentang H. Jejen</h2>
+          <p>Saya <strong>H. Jejen Sayuti, S.E.</strong> adalah pembuat konten yang gemar berbagi cerita keseharian dan perjalanan kuliner. Melalui kanal YouTube <strong><a href="https://www.youtube.com/@KangJejenSayutiTeam" target="_blank">KangJejenSayutiTeam</a></strong> dan TikTok <strong><a href="https://www.tiktok.com/@npoct_" target="_blank">@npoct_</a></strong>, saya membagikan pengalaman hidup, ulasan makanan, serta momen kebersamaan yang hangat dan menginspirasi.</p>
+        </div>
+
+        <div class="card" id="videos">
+          <h2>Galeri Video</h2>
+          <div class="videos">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/ZyK1p4dxYh4" title="Daily vlog" allowfullscreen></iframe>
+            </div>
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/D3E6cZbRBbM" title="Kuliner vlog" allowfullscreen></iframe>
+            </div>
+            <div class="video-embed">
+              <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@npoct_/video/7394048029136102661" data-video-id="7394048029136102661"><section>Loading TikTok...</section></blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="kontak">
+          <h2>Kontak & Kolaborasi</h2>
+          <p>Untuk kerja sama, sponsorship, atau kolaborasi konten, silakan hubungi:</p>
+          <p><strong>Email:</strong> <a href="mailto:nadyaputrioct@gmail.com">nadyaputrioct@gmail.com</a></p>
+          <div class="meta">
+            <a href="https://www.youtube.com/@KangJejenSayutiTeam" target="_blank" class="pill">YouTube</a>
+            <a href="https://www.tiktok.com/@npoct_" target="_blank" class="pill">TikTok</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> H. Jejen Sayuti, S.E. — Website personal branding.
+    </footer>
+  </div>
+
+  <script async src="https://www.tiktok.com/embed.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
